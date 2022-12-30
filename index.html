@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>cleaning</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">MANGO</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE NOSOTROS</a></li>
+                    <li><a href="#portafolio" onclick="seleccionar()">GALERIA</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="logo.jfif" alt="">
+            </div>
+            <h1>MANGO CLEANING</h1>
+            <h2>Limpio y brillante</h2>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+            </div>
+        </div>
+    </section>
+
+
+     <!-- SECCION SOBRE MI -->
+     <section id="sobremi" class="sobremi"> 
+        <div class="contenido-seccion">
+            <h2>Sobre Mango</h2>
+            <p>Hola, Somos<span> MANGO CLEANING </span> una empresa dedicada al diseño, fabricación y 
+                distribución de productos de brillo y limpieza para autos, motos y de más vehículos. Con óptima
+                 calidad y precios competitivos. Nos ocupamos de desarrollar nuestras actividades a través de 
+                 procesos de mejoramiento continuo a través de una gestión dirigida a nuestros clientes. operando
+                  bajo claras políticas de respeto con el ambiente, incorporando en nuestro hacer diario esta 
+                  gestión para satisfacer responsablemente las expectativas de nuestros clientes. 
+            </p>
+    
+
+            <!-- DATOS PERSONALES -->
+            <div class="fila">
+                <div class="col">
+                    <h3>Datos Empresariales</h3>
+                    <ul>
+                        <li>
+                            <strong>Telefono</strong>
+                            3134481515
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            wilson.mahecha85@hotmail.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Kra 81 b #73a46 Sur
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SECCION PORTAFOLIO -->
+    <section id="portafolio" class="portafolio">
+        <div class="contenido-seccion">
+            <h2>PORTAFOLIO DE PRODUCTOS</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="porce.jfif" alt="">
+                    <div class="overlay">
+                        <h4>Porcelanizador</h4>
+                        <h4>40.000</h4>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="tapi.jfif" alt="">
+                    <div class="overlay">
+                        <h4>Limpiador Tapiceria</h4>
+                        <h4>40.000</h4>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="negras.jfif" alt="">
+                    <div class="overlay">
+                        <h4>Partes negras</h4>
+                        <h4>30.000</h4> 
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="manchas1.jfif" alt="">
+                    <div class="overlay">
+                        <h4>Crema Quita Rayones</h4>
+                        <h4>20.000</h4> 
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="desem.jfif" alt="">
+                    <div class="overlay">
+                        <h4>Desempañador</h4>
+                        <h4>15.000</h4> 
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="ambien2.jfif" alt="">
+                    <div class="overlay">
+                        <h4>Ambientador</h4>
+                        <h4>15.000</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!--FORMULARIO-->
+                <div class="col">
+                    <input type="text" placeholder="Tu nombre">
+                    <input type="text" placeholder="Numero telefonico">
+                    <input type="text" placeholder="Correo electronico">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!--MAPA-->
+                <div class="col">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.
+                    904417875375!2d-74.20063588626313!3d4.611126443714181!2m3!1f0!2f0!3f0!3m2!
+                    1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9e15bce7e531%3A0x8f1f21e2de21250d!
+                    2zQ3JhLiA4MWIgIzczLCBCb2dvdMOh!5e0!3m2!1ses!2sco!4v1672332992547!5m2!1ses!2sco"
+                     width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Cel: 3134481515
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                wilson.mahecha85@hotmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+        </div>
+        <h2>Autor: Juan Pablo Jutinico</h2>
+        <h2>Cel: 3106667305</h2>
+        <h2>Email: jp_1027@hotmail.com</h2>
+    </footer>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
